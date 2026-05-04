@@ -1,0 +1,12 @@
+services:
+  streaming:
+    build: .
+    command: streaming
+
+  files:
+    build: .
+    command: files
+
+  bonus:
+    build: .
+    command: bonus
