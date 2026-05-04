@@ -28,7 +28,7 @@ class Tournament:
     self._update_pair_weights(best_assignment)
 
     tables = [
-        Table(id=i, players=[self.players[pid] for pid in group]) for i, group in enumerate(best_assignment)
+      Table(id=i, players=[self.players[pid] for pid in group]) for i, group in enumerate(best_assignment)
     ]
     rnd = Round(id=len(self.rounds) + 1, tables=tables)
     self.rounds.append(rnd)
